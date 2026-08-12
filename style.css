@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars if items go slightly off-screen */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2c3e50; /* Dark background for contrast */
+    color: #ecf0f1;
+}
+
+#beachcomber-container {
+    position: relative; /* Important for absolutely positioning items */
+    width: 90vw; /* Take up most of the viewport width */
+    height: 80vh; /* Take up most of the viewport height */
+    border: 2px dashed #7f8c8d; /* A subtle border */
+    background-color: #34495e; /* Slightly lighter than body */
+    overflow: hidden; /* Keep items within bounds */
+}
+
+.item {
+    position: absolute; /* Allows precise positioning with top/left */
+    user-select: none; /* Prevent accidental selection of images */
+    pointer-events: none; /* Allow clicking through items if desired */
+    /* Initial styles for items will be set by JS */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transitions */
+}
+
+.item.entering {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.5); /* Start above and smaller */
+}
+
+.item.entered {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* End at position and full size */
+}
+
+#throw-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#throw-button:hover {
+    background-color: #d35400;
+}
