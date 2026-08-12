@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of your regular item image paths for bones and shells
     const regularItemImages = [
-        'images/bone1.png',
-        'images/bone2.png',
+        //'images/bone1.png',
+        //'images/bone2.png',
         'images/bone3.png',
         // Add more paths to your bone and shell images here!
     ];
