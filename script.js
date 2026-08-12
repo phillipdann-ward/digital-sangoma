@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // The special item
     const specialItemImage = 'images/areatsrs.png';
-    const specialItemProbability = 0.3; // 30% chance for the special item to appear
-    const specialItemSizeMultiplier = 1.5; // Make the special item a bit larger
+    const specialItemProbability = 0.1; // 30% chance for the special item to appear
+    const specialItemSizeMultiplier = 0.5; // Make the special item a bit larger
 
     const numberOfRegularItemsToThrow = 14; // We'll throw one less regular item if the special one appears
 
