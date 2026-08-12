@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of your regular item image paths for bones and shells
     const regularItemImages = [
-        //'images/bone1.png',
-        //'images/bone2.png',
+        'images/bone1.png',
+        'images/bone2.png',
         'images/bone3.png',
         // Add more paths to your bone and shell images here!
     ];
 
     // The special item
     const specialItemImage = 'images/areatsrs.png';
-    const specialItemProbability = 1.0; // 30% chance for the special item to appear
-    const specialItemSizeMultiplier = 0.5; // Make the special item a bit larger
+    const specialItemProbability = 0.1; // 10% chance for the special item to appear
+    const specialItemSizeMultiplier = 0.2; // Make the special item a bit smaller
 
     const numberOfRegularItemsToThrow = 14; // We'll throw one less regular item if the special one appears
 
