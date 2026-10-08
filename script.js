@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // The special item
-    const specialItemImage = 'images/areatsrs.png';
+    const specialItemImage = 'images/2ndstagearming.png';
     const specialItemProbability = 0.3; // chance for the special item to appear
     const specialItemSizeMultiplier = 2.0; // Make the special item a bit smaller or bigger
 
