@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // The special item
     const specialItemImage = 'images/andystuart.png';
-    const specialItemProbability = 0.3; // chance for the special item to appear
+    const specialItemProbability = 0.7; // chance for the special item to appear
     const specialItemSizeMultiplier = 2.0; // Make the special item a bit smaller or bigger
 
     const numberOfRegularItemsToThrow = 14; // We'll throw one less regular item if the special one appears
