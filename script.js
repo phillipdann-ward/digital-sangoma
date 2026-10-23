@@ -10,8 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add more paths to your bone and shell images here!
     ];
 
+    // Array of your special item image paths for bones and shells
+    const specialItemImages = [
+        'images/2ndstagearming.png',
+        'images/andystuart.png',
+        'images/areatsrs.png',
+        'images/windchilldown.png',
+        // Add more paths to your bone and shell images here!
+    ];
+
     // The special item
-    const specialItemImage = 'images/andystuart.png';
+    //const specialItemImage = 'images/andystuart.png';
     const specialItemProbability = 0.7; // chance for the special item to appear
     const specialItemSizeMultiplier = 2.0; // Make the special item a bit smaller or bigger
 
@@ -33,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerWidth = containerRect.width;
         const containerHeight = containerRect.height;
 
+        let specialItemImage = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
+        
         let hasSpecialItemAppeared = false;
         if (Math.random() < specialItemProbability) {
             hasSpecialItemAppeared = true;
@@ -40,8 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Determine total items to throw, accounting for the special item
         const totalItemsToThrow = hasSpecialItemAppeared ? numberOfRegularItemsToThrow + 1 : numberOfRegularItemsToThrow;
-
-        let specialItemAdded = false;
 
         for (let i = 0; i < totalItemsToThrow; i++) {
             const img = document.createElement('img');
@@ -53,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Decide if this iteration should be the special item
             // Only if it's supposed to appear AND hasn't been added yet
             if (hasSpecialItemAppeared && !specialItemAdded && i === getRandomInt(0, totalItemsToThrow - 1)) {
-                currentImageSrc = specialItemImage;
+                currentImageSrc = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
                 currentSize = getRandomInt(50, 150) * specialItemSizeMultiplier; // Make it larger
                 specialItemAdded = true; // Mark as added
             } else {
