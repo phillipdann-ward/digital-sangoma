@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'images/2ndstagearming.png',
         'images/andystuart.png',
         'images/areatsrs.png',
+        'images/rbcfailsafe.png',
         'images/windchilldown.png'
         // Add more paths to your bone and shell images here!
     ];
