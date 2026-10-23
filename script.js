@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // The special item
-    //const specialItemImage = 'images/andystuart.png';
+    const specialItemImage = 'images/andystuart.png';
     const specialItemProbability = 0.7; // chance for the special item to appear
     const specialItemSizeMultiplier = 2.0; // Make the special item a bit smaller or bigger
 
@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Only if it's supposed to appear AND hasn't been added yet
             if (hasSpecialItemAppeared && !specialItemAdded && i === getRandomInt(0, totalItemsToThrow - 1)) {
                 //currentImageSrc = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
-                currentImageSrc = 'images/2ndstagearming.png';
+                //currentImageSrc = 'images/2ndstagearming.png';
+                currentImageSrc = specialItemImage;
                 currentSize = getRandomInt(50, 150) * specialItemSizeMultiplier; // Make it larger
                 specialItemAdded = true; // Mark as added
             } else {
