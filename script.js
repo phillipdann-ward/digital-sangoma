@@ -60,7 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Decide if this iteration should be the special item
             // Only if it's supposed to appear AND hasn't been added yet
             if (hasSpecialItemAppeared && !specialItemAdded && i === getRandomInt(0, totalItemsToThrow - 1)) {
-                currentImageSrc = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
+                //currentImageSrc = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
+                currentImageSrc = 'images/2ndstagearming.png';
                 currentSize = getRandomInt(50, 150) * specialItemSizeMultiplier; // Make it larger
                 specialItemAdded = true; // Mark as added
             } else {
