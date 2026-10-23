@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const regularItemImages = [
         'images/bone1.png',
         'images/bone2.png',
-        'images/bone3.png',
+        'images/bone3.png'
         // Add more paths to your bone and shell images here!
     ];
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'images/2ndstagearming.png',
         'images/andystuart.png',
         'images/areatsrs.png',
-        'images/windchilldown.png',
+        'images/windchilldown.png'
         // Add more paths to your bone and shell images here!
     ];
 
@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerWidth = containerRect.width;
         const containerHeight = containerRect.height;
 
-        let specialItemImage = specialItemImages[getRandomInt(0, specialItemImages.length - 1)];
-        
         let hasSpecialItemAppeared = false;
         if (Math.random() < specialItemProbability) {
             hasSpecialItemAppeared = true;
