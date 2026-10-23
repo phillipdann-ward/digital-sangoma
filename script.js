@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Determine total items to throw, accounting for the special item
         const totalItemsToThrow = hasSpecialItemAppeared ? numberOfRegularItemsToThrow + 1 : numberOfRegularItemsToThrow;
 
+        let specialItemAdded = false;
+
         for (let i = 0; i < totalItemsToThrow; i++) {
             const img = document.createElement('img');
             img.classList.add('item');
